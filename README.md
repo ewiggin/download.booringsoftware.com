@@ -1,4 +1,4 @@
-# download.booringsoftware.com
+# roller-admin.booringsoftware.com
 
 Static download page for **RollerAdmin** — a desktop app for managing turns and activities in special campaigns.
 

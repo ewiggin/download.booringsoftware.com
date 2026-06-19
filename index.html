@@ -782,6 +782,49 @@
 
   </main>
 
+  <!-- MODAL macOS -->
+  <div id="macosModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" id="macosModalBackdrop"></div>
+    <div class="relative w-full max-w-lg rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-2xl p-6 sm:p-8">
+
+      <!-- Header -->
+      <div class="flex items-start gap-4 mb-5">
+        <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
+          <svg class="w-5 h-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="font-semibold text-base text-gray-900 dark:text-gray-100">Aviso importante para macOS</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mt-0.5">Antes de instalar, lee esto</p>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div class="space-y-4 text-sm text-gray-700 dark:text-gray-300">
+        <p>Al abrir la aplicación por primera vez, es posible que macOS muestre el siguiente error:</p>
+        <div class="rounded-lg border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950/40 px-4 py-3 text-red-700 dark:text-red-400 text-sm font-medium">
+          "Roller Admin.app" está dañado y no se puede abrir.
+        </div>
+        <p>Esto ocurre porque la app no está firmada con un certificado de Apple. Para solucionarlo, abre el <strong class="text-gray-900 dark:text-gray-100">Terminal</strong> y ejecuta este comando <strong class="text-gray-900 dark:text-gray-100">cada vez que instales una nueva versión:</strong></p>
+        <div class="group relative rounded-lg bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-4 py-3 font-mono text-sm text-gray-800 dark:text-gray-200 select-all cursor-text">
+          xattr -cr "/Applications/Roller Admin.app"
+        </div>
+        <p class="text-xs text-gray-400 dark:text-gray-500">Tras ejecutar el comando, vuelve a abrir la app con doble clic y funcionará con normalidad.</p>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex flex-col-reverse sm:flex-row gap-3 mt-6">
+        <button id="macosModalCancel" class="flex-1 px-4 py-2.5 rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+          Cancelar
+        </button>
+        <a id="macosModalConfirm" href="#" class="flex-1 px-4 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-sm font-medium text-center transition-colors">
+          Entendido, descargar
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- FOOTER -->
   <footer class="border-t border-gray-200 dark:border-gray-800 py-6">
     <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400 dark:text-gray-500">
@@ -810,6 +853,35 @@
     btn.addEventListener('click', () => {
       applyTheme(!html.classList.contains('dark'));
     });
+
+    // macOS download modal
+    const modal = document.getElementById('macosModal');
+    const confirmBtn = document.getElementById('macosModalConfirm');
+    const cancelBtn = document.getElementById('macosModalCancel');
+    const backdrop = document.getElementById('macosModalBackdrop');
+
+    function openMacModal(url) {
+      confirmBtn.href = url;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeMacModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    document.querySelectorAll('a[href$=".dmg"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        openMacModal(link.href);
+      });
+    });
+
+    confirmBtn.addEventListener('click', closeMacModal);
+    cancelBtn.addEventListener('click', closeMacModal);
+    backdrop.addEventListener('click', closeMacModal);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMacModal(); });
   </script>
 
 </body>

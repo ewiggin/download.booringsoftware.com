@@ -69,6 +69,17 @@
   <!-- MAIN CONTENT -->
   <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
 
+    <version-card version="desktop-v0.2.9" date="22 jun 2026">
+      <changelog-section name="Anfitriones" icon="home">
+        <changelog-item type="new">Distancia y congregación en grupos de anfitriones: el selector de grupos disponibles para un turno de predicación muestra ahora todos los grupos de la región ordenados por distancia (calculada desde la ubicación de la actividad, o la del anfitrión como fallback, hasta las coordenadas medias de los invitados del grupo), en lugar de filtrar solo por el anfitrión de la actividad.</changelog-item>
+        <changelog-item type="new">Información ampliada en grupos ya asignados: los grupos ya asignados muestran ahora el nombre del anfitrión y la distancia en km, los mismos datos que el selector.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Actividades" icon="calendar">
+        <changelog-item type="improved">Selector de grupos multi-selección: el desplegable para añadir grupos a un turno de predicación permite ahora seleccionar varios grupos a la vez y oculta los grupos sin invitados.</changelog-item>
+        <changelog-item type="improved">Asignación entre congregaciones: eliminada la validación que impedía asignar a un turno grupos de una congregación distinta a la del anfitrión de la actividad.</changelog-item>
+      </changelog-section>
+    </version-card>
+
     <version-card version="desktop-v0.2.8" date="22 jun 2026">
       <changelog-section name="Anfitriones" icon="home">
         <changelog-item type="new">Selector de región al editar grupo: el formulario de edición de grupos de anfitriones incluye ahora un selector de región, permitiendo cambiar la región asignada al guardar los cambios.</changelog-item>

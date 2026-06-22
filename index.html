@@ -69,820 +69,97 @@
   <!-- MAIN CONTENT -->
   <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
 
-    <!-- VERSION CARD -->
-    <section id="version-desktop-v0.2.8" class="rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden">
-
-      <!-- Version header -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-6 py-5 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-brand-500 text-white">desktop-v0.2.8</span>
-          <span class="text-sm text-gray-500 dark:text-gray-400">22 jun 2026</span>
-        </div>
-        <span class="text-xs text-gray-400 dark:text-gray-500">Aplicación de escritorio</span>
-      </div>
-
-      <!-- Changelog -->
-      <div class="px-6 py-6 border-b border-gray-200 dark:border-gray-800">
-        <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Novedades</h2>
-
-        <!-- Leyenda -->
-        <div class="flex flex-wrap gap-4 mb-6 text-xs text-gray-500 dark:text-gray-400">
-          <span class="flex items-center gap-1.5">
-            <span class="w-4 h-4 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center flex-shrink-0">
-              <svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-            </span>Nuevo
-          </span>
-        </div>
-
-        <div class="space-y-8">
-
-          <!-- ANFITRIONES -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-              Anfitriones
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Selector de región al editar grupo: el formulario de edición de grupos de anfitriones incluye ahora un selector de región, permitiendo cambiar la región asignada al guardar los cambios.</span>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Download buttons -->
-      <div class="px-6 py-6">
-        <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Descargar</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-
-          <!-- Ubuntu -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.8/Roller.Admin_0.2.8_amd64.AppImage" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-orange-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2a8 8 0 1 1 0 16A8 8 0 0 1 12 4zm0 2a6 6 0 1 0 0 12A6 6 0 0 0 12 6zm0 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-4.5 3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm9 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">Ubuntu</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Linux x64 · .AppImage</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-          <!-- macOS -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.8/Roller.Admin_0.2.8_aarch64.dmg" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-gray-200 dark:bg-gray-700 flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-gray-700 dark:text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">macOS</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Apple Silicon · .dmg</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-          <!-- Windows -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.8/Roller.Admin_0.2.8_x64_en-US.msi" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">Windows</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Windows 10/11 · .msi</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- VERSION CARD -->
-    <section id="version-desktop-v0.2.7" class="rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden">
-
-      <!-- Version header -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-6 py-5 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-brand-500 text-white">desktop-v0.2.7</span>
-          <span class="text-sm text-gray-500 dark:text-gray-400">19 jun 2026</span>
-        </div>
-        <span class="text-xs text-gray-400 dark:text-gray-500">Aplicación de escritorio</span>
-      </div>
-
-      <!-- Changelog -->
-      <div class="px-6 py-6 border-b border-gray-200 dark:border-gray-800">
-        <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Novedades</h2>
-
-        <!-- Leyenda -->
-        <div class="flex flex-wrap gap-4 mb-6 text-xs text-gray-500 dark:text-gray-400">
-          <span class="flex items-center gap-1.5">
-            <span class="w-4 h-4 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center flex-shrink-0">
-              <svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-            </span>Nuevo
-          </span>
-        </div>
-
-        <div class="space-y-8">
-
-          <!-- ANFITRIONES -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-              Anfitriones
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">El PDF del grupo incluye ahora las reuniones semanales del anfitrión (entre semana y fin de semana), ordenadas cronológicamente junto con el resto de actividades, con la dirección completa y un enlace a Google Maps.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Al escribir la dirección de un anfitrión, aparecen sugerencias automáticas mientras se escribe; tras seleccionar una, se muestra una previsualización del mapa con la ubicación exacta.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- ACTIVIDADES -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-              Actividades
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">El botón "Exportar" de la lista de actividades descarga ahora todas las actividades que coincidan con los filtros activos (región, fecha, anfitrión…), no solo las seleccionadas. El nombre del fichero refleja la región y la fecha filtradas cuando se han aplicado esos filtros.</span>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Download buttons -->
-      <div class="px-6 py-6">
-        <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Descargar</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-
-          <!-- Ubuntu -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.7/Roller.Admin_0.2.7_amd64.AppImage" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-orange-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2a8 8 0 1 1 0 16A8 8 0 0 1 12 4zm0 2a6 6 0 1 0 0 12A6 6 0 0 0 12 6zm0 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-4.5 3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm9 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">Ubuntu</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Linux x64 · .AppImage</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-          <!-- macOS -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.7/Roller.Admin_0.2.7_aarch64.dmg" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-gray-200 dark:bg-gray-700 flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-gray-700 dark:text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">macOS</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Apple Silicon · .dmg</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-          <!-- Windows -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.7/Roller.Admin_0.2.7_x64_en-US.msi" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">Windows</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Windows 10/11 · .msi</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- VERSION CARD -->
-    <section id="version-desktop-v0.2.6" class="rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden">
-
-      <!-- Version header -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-6 py-5 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-brand-500 text-white">desktop-v0.2.6</span>
-          <span class="text-sm text-gray-500 dark:text-gray-400">18 jun 2026</span>
-        </div>
-        <span class="text-xs text-gray-400 dark:text-gray-500">Aplicación de escritorio</span>
-      </div>
-
-      <!-- Changelog -->
-      <div class="px-6 py-6 border-b border-gray-200 dark:border-gray-800">
-        <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Novedades</h2>
-
-        <!-- Leyenda -->
-        <div class="flex flex-wrap gap-4 mb-6 text-xs text-gray-500 dark:text-gray-400">
-          <span class="flex items-center gap-1.5">
-            <span class="w-4 h-4 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center flex-shrink-0">
-              <svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-            </span>Nuevo
-          </span>
-          <span class="flex items-center gap-1.5">
-            <span class="w-4 h-4 rounded-full bg-amber-500/15 text-amber-500 flex items-center justify-center flex-shrink-0">
-              <svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-            </span>Corregido
-          </span>
-        </div>
-
-        <div class="space-y-8">
-
-          <!-- ACTIVIDADES -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-              Actividades
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Al crear una nueva actividad, los grupos de predicación correspondientes se generan automáticamente, sin necesidad de crearlos por separado.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- ADMINISTRACIÓN GENERAL -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              Administración general
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Zona de peligro en Ajustes: nueva sección que permite resetear completamente la base de datos. Por seguridad, el botón solo se activa al escribir la palabra CONFIRMAR.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">La versión instalada de la aplicación ahora aparece visible en el menú lateral.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-amber-500/15 text-amber-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Corregido un error que impedía importar correctamente la base de datos en ciertos casos.</span>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Download buttons -->
-      <div class="px-6 py-6">
-        <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Descargar</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-
-          <!-- Ubuntu -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.6/Roller.Admin_0.2.6_amd64.AppImage" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-orange-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2a8 8 0 1 1 0 16A8 8 0 0 1 12 4zm0 2a6 6 0 1 0 0 12A6 6 0 0 0 12 6zm0 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-4.5 3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm9 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">Ubuntu</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Linux x64 · .AppImage</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-          <!-- macOS -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.6/Roller.Admin_0.2.6_aarch64.dmg" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-gray-200 dark:bg-gray-700 flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-gray-700 dark:text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">macOS</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Apple Silicon · .dmg</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-          <!-- Windows -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.6/Roller.Admin_0.2.6_x64_en-US.msi" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">Windows</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Windows 10/11 · .msi</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- VERSION CARD -->
-    <section id="version-desktop-v0.2.5" class="rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden">
-
-      <!-- Version header -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-6 py-5 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-brand-500 text-white">desktop-v0.2.5</span>
-          <span class="text-sm text-gray-500 dark:text-gray-400">18 jun 2026</span>
-        </div>
-        <span class="text-xs text-gray-400 dark:text-gray-500">Aplicación de escritorio</span>
-      </div>
-
-      <!-- Changelog -->
-      <div class="px-6 py-6 border-b border-gray-200 dark:border-gray-800">
-        <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Novedades</h2>
-
-        <!-- Leyenda -->
-        <div class="flex flex-wrap gap-4 mb-6 text-xs text-gray-500 dark:text-gray-400">
-          <span class="flex items-center gap-1.5">
-            <span class="w-4 h-4 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center flex-shrink-0">
-              <svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-            </span>Nuevo
-          </span>
-          <span class="flex items-center gap-1.5">
-            <span class="w-4 h-4 rounded-full bg-blue-500/15 text-blue-500 flex items-center justify-center flex-shrink-0">
-              <svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>Mejorado
-          </span>
-          <span class="flex items-center gap-1.5">
-            <span class="w-4 h-4 rounded-full bg-amber-500/15 text-amber-500 flex items-center justify-center flex-shrink-0">
-              <svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-            </span>Corregido
-          </span>
-        </div>
-
-        <div class="space-y-8">
-
-          <!-- ACTIVIDADES -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-              Actividades
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Exportación e importación de actividades con UI de merge para resolver conflictos al importar.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- ANFITRIONES -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-              Anfitriones
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Importación de anfitriones con días de reunión: el proceso de importación ahora acepta y aplica los días de reunión de cada anfitrión.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- GRUPOS DE INVITADOS -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              Grupos de invitados
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-blue-500/15 text-blue-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Flujo de importación más robusto con nuevos DTOs de validación, respuesta de parseo y commit.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- ADMINISTRACIÓN GENERAL -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              Administración general
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Comprobación de versión en el escritorio: la app avisa con un toast cuando hay una versión más reciente disponible para descargar.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-amber-500/15 text-amber-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">El toast de nueva versión ahora solo se muestra cuando la versión remota es estrictamente más nueva que la local.</span>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Download buttons -->
-      <div class="px-6 py-6">
-        <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Descargar</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-
-          <!-- Ubuntu -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.5/Roller.Admin_0.2.5_amd64.AppImage" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-orange-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2a8 8 0 1 1 0 16A8 8 0 0 1 12 4zm0 2a6 6 0 1 0 0 12A6 6 0 0 0 12 6zm0 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-4.5 3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm9 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">Ubuntu</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Linux x64 · .AppImage</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-          <!-- macOS -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.5/Roller.Admin_0.2.5_aarch64.dmg" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-gray-200 dark:bg-gray-700 flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-gray-700 dark:text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">macOS</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Apple Silicon · .dmg</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-          <!-- Windows -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.5/Roller.Admin_0.2.5_x64_en-US.msi" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">Windows</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Windows 10/11 · .msi</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- VERSION CARD -->
-    <section id="version-desktop-v0.2.4" class="rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden">
-
-      <!-- Version header -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-6 py-5 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-brand-500 text-white">desktop-v0.2.4</span>
-          <span class="text-sm text-gray-500 dark:text-gray-400">17 jun 2026</span>
-        </div>
-        <span class="text-xs text-gray-400 dark:text-gray-500">Aplicación de escritorio</span>
-      </div>
-
-      <!-- Changelog -->
-      <div class="px-6 py-6 border-b border-gray-200 dark:border-gray-800">
-        <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Novedades</h2>
-
-        <!-- Leyenda -->
-        <div class="flex flex-wrap gap-4 mb-6 text-xs text-gray-500 dark:text-gray-400">
-          <span class="flex items-center gap-1.5">
-            <span class="w-4 h-4 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center flex-shrink-0">
-              <svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-            </span>Nuevo
-          </span>
-          <span class="flex items-center gap-1.5">
-            <span class="w-4 h-4 rounded-full bg-blue-500/15 text-blue-500 flex items-center justify-center flex-shrink-0">
-              <svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>Mejorado
-          </span>
-          <span class="flex items-center gap-1.5">
-            <span class="w-4 h-4 rounded-full bg-amber-500/15 text-amber-500 flex items-center justify-center flex-shrink-0">
-              <svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-            </span>Corregido
-          </span>
-        </div>
-
-        <div class="space-y-8" id="changelog-list">
-
-          <!-- GRUPOS DE INVITADOS -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              Grupos de invitados
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Columna de número de coches visible en la lista de grupos, con icono de coche.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Columna de plazas compartidas disponibles visible en la lista de grupos.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Filtro por coche en la lista: Todos / Con coche / Sin coche.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Número de coches editable desde el modal de edición del grupo.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-blue-500/15 text-blue-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Filtros mejorados: idiomas, composición y plazas de coche.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-blue-500/15 text-blue-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Etiqueta del filtro de plazas renombrada a "Plazas compartidas de coche".</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-blue-500/15 text-blue-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Botón de edición cambiado de icono de calendario a icono de lápiz.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- ANFITRIONES -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-              Anfitriones
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Campo de capacidad editable desde el modal, con distintivo invitados/capacidad en la lista y el detalle.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Filtro de idioma para grupos disponibles en el detalle del anfitrión.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Filtro de coche en el panel de grupos disponibles del detalle del anfitrión.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Distintivo de idioma visible en cada tarjeta de grupo disponible.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Número de coches y plazas disponibles visibles en los grupos asignados y disponibles del detalle.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-amber-500/15 text-amber-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Campo de capacidad puede dejarse en blanco en el modal de edición.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- ACTIVIDADES -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-              Actividades
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Campo editable para el número de voluntarios necesarios en cada actividad.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Campo editable para el número máximo de invitados por actividad.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Selector de rol de voluntario desde los roles disponibles del propio voluntario.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Filtro por rol con comprobación real de disponibilidad (botones tipo chip).</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Indicador de turno de predicación visible en la lista de actividades.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Vista de calendario con repeticiones y gestión de series; filtrado por anfitrión.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Bloqueo de asignación de grupo a actividad si el anfitrión tiene otro evento ese día.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-blue-500/15 text-blue-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Estilos del modal mejorados; botones de guardar y eliminar rediseñados.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- VOLUNTARIOS -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-              Voluntarios
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Vista de detalle del voluntario con localización, horario y filtros editables.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Lista de voluntarios con filtros por disponibilidad, términos aceptados y rol.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Código de voluntario y región editables desde el panel de administración.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Información de términos aceptados visible en el detalle del voluntario.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Gestión completa (CRUD) de roles de voluntario.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-amber-500/15 text-amber-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Corregidos errores de filtrado en la lista de voluntarios (abrir en nueva pestaña, filtrado incorrecto).</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- ADMINISTRACIÓN GENERAL -->
-          <div>
-            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              Administración general
-            </h3>
-            <ul class="space-y-2.5">
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Sección de configuración con ajustes de correo electrónico e icono en la cabecera.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Módulo de regiones con lista de coordinadores y fechas de evento.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Formularios de alta manual de invitados y grupos.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Importación y exportación de Excel para invitados, grupos, anfitriones y regiones.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Visibilidad de menú según rol: los administradores de región solo ven sus propias regiones.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Selectores con búsqueda integrada en toda la interfaz.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Iconografía completa en toda la interfaz de administración (Heroicons).</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Autenticación JWT con pantalla de carga y cierre de sesión automático al recibir error 401.</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-green-500/15 text-green-500 flex items-center justify-center"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
-                <span class="text-sm text-gray-700 dark:text-gray-300">Modo oscuro con persistencia en almacenamiento local y respeto de la preferencia del sistema operativo.</span>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Download buttons -->
-      <div class="px-6 py-6">
-        <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Descargar</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-
-          <!-- Ubuntu -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.4/Roller.Admin_0.2.4_amd64.AppImage" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center flex-shrink-0">
-                <!-- Ubuntu icon -->
-                <svg class="w-6 h-6 text-orange-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2a8 8 0 1 1 0 16A8 8 0 0 1 12 4zm0 2a6 6 0 1 0 0 12A6 6 0 0 0 12 6zm0 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-4.5 3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm9 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">Ubuntu</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Linux x64 · .AppImage</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-          <!-- macOS -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.4/Roller.Admin_0.2.4_aarch64.dmg" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-gray-200 dark:bg-gray-700 flex items-center justify-center flex-shrink-0">
-                <!-- Apple icon -->
-                <svg class="w-5 h-5 text-gray-700 dark:text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">macOS</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Apple Silicon · .dmg</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-          <!-- Windows -->
-          <a href="https://github.com/ewiggin/download.booringsoftware.com/releases/download/desktop-v0.2.4/Roller.Admin_0.2.4_x64_en-US.msi" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
-            <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0">
-                <!-- Windows icon -->
-                <svg class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
-              </span>
-              <div>
-                <p class="font-semibold text-sm">Windows</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Windows 10/11 · .msi</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-              Descargar
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-    <!-- /VERSION CARD — añade más versiones copiando la sección de arriba -->
+    <version-card version="desktop-v0.2.8" date="22 jun 2026">
+      <changelog-section name="Anfitriones" icon="home">
+        <changelog-item type="new">Selector de región al editar grupo: el formulario de edición de grupos de anfitriones incluye ahora un selector de región, permitiendo cambiar la región asignada al guardar los cambios.</changelog-item>
+      </changelog-section>
+    </version-card>
+
+    <version-card version="desktop-v0.2.7" date="19 jun 2026">
+      <changelog-section name="Anfitriones" icon="home">
+        <changelog-item type="new">El PDF del grupo incluye ahora las reuniones semanales del anfitrión (entre semana y fin de semana), ordenadas cronológicamente junto con el resto de actividades, con la dirección completa y un enlace a Google Maps.</changelog-item>
+        <changelog-item type="new">Al escribir la dirección de un anfitrión, aparecen sugerencias automáticas mientras se escribe; tras seleccionar una, se muestra una previsualización del mapa con la ubicación exacta.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Actividades" icon="calendar">
+        <changelog-item type="new">El botón "Exportar" de la lista de actividades descarga ahora todas las actividades que coincidan con los filtros activos (región, fecha, anfitrión…), no solo las seleccionadas. El nombre del fichero refleja la región y la fecha filtradas cuando se han aplicado esos filtros.</changelog-item>
+      </changelog-section>
+    </version-card>
+
+    <version-card version="desktop-v0.2.6" date="18 jun 2026">
+      <changelog-section name="Actividades" icon="calendar">
+        <changelog-item type="new">Al crear una nueva actividad, los grupos de predicación correspondientes se generan automáticamente, sin necesidad de crearlos por separado.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Administración general" icon="settings">
+        <changelog-item type="new">Zona de peligro en Ajustes: nueva sección que permite resetear completamente la base de datos. Por seguridad, el botón solo se activa al escribir la palabra CONFIRMAR.</changelog-item>
+        <changelog-item type="new">La versión instalada de la aplicación ahora aparece visible en el menú lateral.</changelog-item>
+        <changelog-item type="fixed">Corregido un error que impedía importar correctamente la base de datos en ciertos casos.</changelog-item>
+      </changelog-section>
+    </version-card>
+
+    <version-card version="desktop-v0.2.5" date="18 jun 2026">
+      <changelog-section name="Actividades" icon="calendar">
+        <changelog-item type="new">Exportación e importación de actividades con UI de merge para resolver conflictos al importar.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Anfitriones" icon="home">
+        <changelog-item type="new">Importación de anfitriones con días de reunión: el proceso de importación ahora acepta y aplica los días de reunión de cada anfitrión.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Grupos de invitados" icon="users">
+        <changelog-item type="improved">Flujo de importación más robusto con nuevos DTOs de validación, respuesta de parseo y commit.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Administración general" icon="settings">
+        <changelog-item type="new">Comprobación de versión en el escritorio: la app avisa con un toast cuando hay una versión más reciente disponible para descargar.</changelog-item>
+        <changelog-item type="fixed">El toast de nueva versión ahora solo se muestra cuando la versión remota es estrictamente más nueva que la local.</changelog-item>
+      </changelog-section>
+    </version-card>
+
+    <version-card version="desktop-v0.2.4" date="17 jun 2026">
+      <changelog-section name="Grupos de invitados" icon="users">
+        <changelog-item type="new">Columna de número de coches visible en la lista de grupos, con icono de coche.</changelog-item>
+        <changelog-item type="new">Columna de plazas compartidas disponibles visible en la lista de grupos.</changelog-item>
+        <changelog-item type="new">Filtro por coche en la lista: Todos / Con coche / Sin coche.</changelog-item>
+        <changelog-item type="new">Número de coches editable desde el modal de edición del grupo.</changelog-item>
+        <changelog-item type="improved">Filtros mejorados: idiomas, composición y plazas de coche.</changelog-item>
+        <changelog-item type="improved">Etiqueta del filtro de plazas renombrada a "Plazas compartidas de coche".</changelog-item>
+        <changelog-item type="improved">Botón de edición cambiado de icono de calendario a icono de lápiz.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Anfitriones" icon="home">
+        <changelog-item type="new">Campo de capacidad editable desde el modal, con distintivo invitados/capacidad en la lista y el detalle.</changelog-item>
+        <changelog-item type="new">Filtro de idioma para grupos disponibles en el detalle del anfitrión.</changelog-item>
+        <changelog-item type="new">Filtro de coche en el panel de grupos disponibles del detalle del anfitrión.</changelog-item>
+        <changelog-item type="new">Distintivo de idioma visible en cada tarjeta de grupo disponible.</changelog-item>
+        <changelog-item type="new">Número de coches y plazas disponibles visibles en los grupos asignados y disponibles del detalle.</changelog-item>
+        <changelog-item type="fixed">Campo de capacidad puede dejarse en blanco en el modal de edición.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Actividades" icon="calendar">
+        <changelog-item type="new">Campo editable para el número de voluntarios necesarios en cada actividad.</changelog-item>
+        <changelog-item type="new">Campo editable para el número máximo de invitados por actividad.</changelog-item>
+        <changelog-item type="new">Selector de rol de voluntario desde los roles disponibles del propio voluntario.</changelog-item>
+        <changelog-item type="new">Filtro por rol con comprobación real de disponibilidad (botones tipo chip).</changelog-item>
+        <changelog-item type="new">Indicador de turno de predicación visible en la lista de actividades.</changelog-item>
+        <changelog-item type="new">Vista de calendario con repeticiones y gestión de series; filtrado por anfitrión.</changelog-item>
+        <changelog-item type="new">Bloqueo de asignación de grupo a actividad si el anfitrión tiene otro evento ese día.</changelog-item>
+        <changelog-item type="improved">Estilos del modal mejorados; botones de guardar y eliminar rediseñados.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Voluntarios" icon="user">
+        <changelog-item type="new">Vista de detalle del voluntario con localización, horario y filtros editables.</changelog-item>
+        <changelog-item type="new">Lista de voluntarios con filtros por disponibilidad, términos aceptados y rol.</changelog-item>
+        <changelog-item type="new">Código de voluntario y región editables desde el panel de administración.</changelog-item>
+        <changelog-item type="new">Información de términos aceptados visible en el detalle del voluntario.</changelog-item>
+        <changelog-item type="new">Gestión completa (CRUD) de roles de voluntario.</changelog-item>
+        <changelog-item type="fixed">Corregidos errores de filtrado en la lista de voluntarios (abrir en nueva pestaña, filtrado incorrecto).</changelog-item>
+      </changelog-section>
+      <changelog-section name="Administración general" icon="settings">
+        <changelog-item type="new">Sección de configuración con ajustes de correo electrónico e icono en la cabecera.</changelog-item>
+        <changelog-item type="new">Módulo de regiones con lista de coordinadores y fechas de evento.</changelog-item>
+        <changelog-item type="new">Formularios de alta manual de invitados y grupos.</changelog-item>
+        <changelog-item type="new">Importación y exportación de Excel para invitados, grupos, anfitriones y regiones.</changelog-item>
+        <changelog-item type="new">Visibilidad de menú según rol: los administradores de región solo ven sus propias regiones.</changelog-item>
+        <changelog-item type="new">Selectores con búsqueda integrada en toda la interfaz.</changelog-item>
+        <changelog-item type="new">Iconografía completa en toda la interfaz de administración (Heroicons).</changelog-item>
+        <changelog-item type="new">Autenticación JWT con pantalla de carga y cierre de sesión automático al recibir error 401.</changelog-item>
+        <changelog-item type="new">Modo oscuro con persistencia en almacenamiento local y respeto de la preferencia del sistema operativo.</changelog-item>
+      </changelog-section>
+    </version-card>
 
   </main>
 
@@ -938,6 +215,7 @@
   </footer>
 
   <script>
+    // ── Theme toggle ──────────────────────────────────────────────────────────
     const html = document.documentElement;
     const btn = document.getElementById('themeToggle');
     const sun = document.getElementById('iconSun');
@@ -950,31 +228,158 @@
       localStorage.setItem('theme', dark ? 'dark' : 'light');
     }
 
-    // Init from localStorage, fallback to dark
     const saved = localStorage.getItem('theme');
     applyTheme(saved !== 'light');
+    btn.addEventListener('click', () => applyTheme(!html.classList.contains('dark')));
 
-    btn.addEventListener('click', () => {
-      applyTheme(!html.classList.contains('dark'));
-    });
-
-    // macOS download modal
-    const modal = document.getElementById('macosModal');
+    // ── macOS modal helpers (defined early, bound after web components render) ─
+    const modal     = document.getElementById('macosModal');
     const confirmBtn = document.getElementById('macosModalConfirm');
-    const cancelBtn = document.getElementById('macosModalCancel');
-    const backdrop = document.getElementById('macosModalBackdrop');
+    const cancelBtn  = document.getElementById('macosModalCancel');
+    const backdrop   = document.getElementById('macosModalBackdrop');
 
     function openMacModal(url) {
       confirmBtn.href = url;
       modal.classList.remove('hidden');
       modal.classList.add('flex');
     }
-
     function closeMacModal() {
       modal.classList.add('hidden');
       modal.classList.remove('flex');
     }
 
+    // ── Web component data ────────────────────────────────────────────────────
+    const SECTION_ICONS = {
+      home:     `<path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>`,
+      calendar: `<path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>`,
+      users:    `<path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>`,
+      settings: `<path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>`,
+      user:     `<path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>`,
+    };
+
+    const TYPE_CONFIG = {
+      new:      { cls: 'bg-green-500/15 text-green-500',  icon: `<path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>`,      label: 'Nuevo' },
+      improved: { cls: 'bg-blue-500/15 text-blue-500',    icon: `<path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/>`, label: 'Mejorado' },
+      fixed:    { cls: 'bg-amber-500/15 text-amber-500',  icon: `<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>`,         label: 'Corregido' },
+    };
+
+    const TYPE_ORDER = ['new', 'improved', 'fixed'];
+
+    const DOWNLOAD_ICON = `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>`;
+
+    function buildPlatforms(version, semver) {
+      const base = `https://github.com/ewiggin/download.booringsoftware.com/releases/download/${version}`;
+      return [
+        {
+          name: 'Ubuntu', sub: 'Linux x64 · .AppImage',
+          url: `${base}/Roller.Admin_${semver}_amd64.AppImage`,
+          iconWrap: 'bg-orange-500/10',
+          icon: `<svg class="w-6 h-6 text-orange-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2a8 8 0 1 1 0 16A8 8 0 0 1 12 4zm0 2a6 6 0 1 0 0 12A6 6 0 0 0 12 6zm0 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-4.5 3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm9 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg>`,
+        },
+        {
+          name: 'macOS', sub: 'Apple Silicon · .dmg',
+          url: `${base}/Roller.Admin_${semver}_aarch64.dmg`,
+          iconWrap: 'bg-gray-200 dark:bg-gray-700',
+          icon: `<svg class="w-5 h-5 text-gray-700 dark:text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>`,
+        },
+        {
+          name: 'Windows', sub: 'Windows 10/11 · .msi',
+          url: `${base}/Roller.Admin_${semver}_x64_en-US.msi`,
+          iconWrap: 'bg-blue-500/10',
+          icon: `<svg class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>`,
+        },
+      ];
+    }
+
+    // ── <version-card> web component (Light DOM) ──────────────────────────────
+    // Define after parsing so children are already in the DOM on connectedCallback.
+    customElements.define('version-card', class extends HTMLElement {
+      connectedCallback() {
+        const version = this.getAttribute('version');
+        const date    = this.getAttribute('date');
+        const semver  = version.replace(/^desktop-v/, '');
+
+        const sections = [...this.querySelectorAll('changelog-section')].map(sec => ({
+          name:  sec.getAttribute('name'),
+          icon:  sec.getAttribute('icon'),
+          items: [...sec.querySelectorAll('changelog-item')].map(item => ({
+            type: item.getAttribute('type') || 'new',
+            text: item.innerHTML.trim(),
+          })),
+        }));
+
+        const usedTypes = TYPE_ORDER.filter(t =>
+          sections.some(s => s.items.some(i => i.type === t))
+        );
+
+        const legendHTML = usedTypes.map(t => {
+          const c = TYPE_CONFIG[t];
+          return `<span class="flex items-center gap-1.5">
+            <span class="w-4 h-4 rounded-full ${c.cls} flex items-center justify-center flex-shrink-0">
+              <svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">${c.icon}</svg>
+            </span>${c.label}
+          </span>`;
+        }).join('');
+
+        const sectionsHTML = sections.map(sec => {
+          const itemsHTML = sec.items.map(item => {
+            const c = TYPE_CONFIG[item.type] || TYPE_CONFIG.new;
+            return `<li class="flex gap-3">
+              <span class="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full ${c.cls} flex items-center justify-center">
+                <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">${c.icon}</svg>
+              </span>
+              <span class="text-sm text-gray-700 dark:text-gray-300">${item.text}</span>
+            </li>`;
+          }).join('');
+          return `<div>
+            <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-3 flex items-center gap-2">
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">${SECTION_ICONS[sec.icon] || ''}</svg>
+              ${sec.name}
+            </h3>
+            <ul class="space-y-2.5">${itemsHTML}</ul>
+          </div>`;
+        }).join('');
+
+        const platformsHTML = buildPlatforms(version, semver).map(p => `
+          <a href="${p.url}" class="group platform-card flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:border-brand-500/50 dark:hover:border-indigo-500/50 hover:bg-gray-50 dark:hover:bg-gray-900/60 transition-all">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-lg ${p.iconWrap} flex items-center justify-center flex-shrink-0">${p.icon}</span>
+              <div>
+                <p class="font-semibold text-sm">${p.name}</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">${p.sub}</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 text-brand-500 dark:text-indigo-400 text-sm font-medium">
+              ${DOWNLOAD_ICON} Descargar
+            </div>
+          </a>`).join('');
+
+        const section = document.createElement('section');
+        section.id = `version-${version}`;
+        section.className = 'rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden';
+        section.innerHTML = `
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-6 py-5 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-brand-500 text-white">${version}</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400">${date}</span>
+            </div>
+            <span class="text-xs text-gray-400 dark:text-gray-500">Aplicación de escritorio</span>
+          </div>
+          <div class="px-6 py-6 border-b border-gray-200 dark:border-gray-800">
+            <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Novedades</h2>
+            <div class="flex flex-wrap gap-4 mb-6 text-xs text-gray-500 dark:text-gray-400">${legendHTML}</div>
+            <div class="space-y-8">${sectionsHTML}</div>
+          </div>
+          <div class="px-6 py-6">
+            <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Descargar</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">${platformsHTML}</div>
+          </div>`;
+
+        this.replaceWith(section);
+      }
+    });
+
+    // ── macOS modal event bindings (after web components render .dmg links) ───
     document.querySelectorAll('a[href$=".dmg"]').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();

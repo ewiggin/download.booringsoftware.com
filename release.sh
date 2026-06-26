@@ -16,11 +16,11 @@ else
   TAG="desktop-v$NUM"
 fi
 
-APPIMAGE="public/Roller.Admin_${NUM}_amd64.AppImage"
+# APPIMAGE="public/Roller.Admin_${NUM}_amd64.AppImage"
 DMG="public/Roller.Admin_${NUM}_aarch64.dmg"
 MSI="public/Roller.Admin_${NUM}_x64_en-US.msi"
 
-for f in "$APPIMAGE" "$DMG" "$MSI"; do
+for f in "$DMG" "$MSI"; do
   if [[ ! -f "$f" ]]; then
     echo "Error: file not found: $f" >&2
     exit 1
@@ -28,6 +28,6 @@ for f in "$APPIMAGE" "$DMG" "$MSI"; do
 done
 
 echo "Creating release $TAG..."
-gh release create "$TAG" "$APPIMAGE" "$DMG" "$MSI" --title "$TAG"
+gh release create "$TAG" "$DMG" "$MSI" --title "$TAG"
 
 echo "$TAG" > version.txt

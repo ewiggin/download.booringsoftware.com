@@ -62,12 +62,23 @@
     </h1>
     <p class="text-gray-500 dark:text-gray-400 text-lg max-w-xl mx-auto">
       Gestión de turnos y actividades para campañas especiales.<br>
-      Disponible para Ubuntu, macOS y Windows.
+      Disponible para macOS y Windows.
     </p>
   </section>
 
   <!-- MAIN CONTENT -->
   <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
+
+    <version-card version="desktop-v0.4.0" date="26 jun 2026">
+      <changelog-section name="Actividades" icon="calendar">
+        <changelog-item type="new">Calendario semanal en grupos de anfitriones: en la lista de grupos de anfitriones puedes desplegar un calendario con todas sus actividades de la semana, organizadas por día y franja horaria. Cada actividad indica si está en borrador o publicada. Puedes expandir y colapsar cada grupo individualmente, o todos a la vez con un solo clic.</changelog-item>
+        <changelog-item type="new">Calendario semanal en voluntarios: igual que el de grupos de anfitriones, pero para voluntarios. De un vistazo puedes ver qué actividades tiene asignadas cada voluntario a lo largo de la semana.</changelog-item>
+        <changelog-item type="new">Grupos de predicación bloqueados si ya tienen turno ese mismo día: si un grupo ya tiene un turno de predicación asignado el mismo día, aparece deshabilitado y marcado en el selector, evitando asignaciones duplicadas por accidente.</changelog-item>
+        <changelog-item type="improved">Grupos de anfitriones con demasiadas actividades visibles pero deshabilitados: los grupos que ya tienen 3 o más actividades normales asignadas ya no desaparecen del selector; se muestran deshabilitados con una explicación, para que sepas que existen pero no están disponibles.</changelog-item>
+        <changelog-item type="improved">Grupos con límite alcanzado siempre visibles: los grupos que han llegado a su máximo de turnos de predicación o tienen conflicto ese día ahora se muestran deshabilitados con el motivo, en lugar de desaparecer, para que no parezca que no existen.</changelog-item>
+        <changelog-item type="fixed">Añadir grupos en turnos de comida: corregido un error que ocultaba el botón para añadir grupos en cuanto se había asignado alguno, impidiendo añadir más de uno.</changelog-item>
+      </changelog-section>
+    </version-card>
 
     <version-card version="desktop-v0.3.0" date="25 jun 2026">
       <changelog-section name="Actividades" icon="calendar">
@@ -296,12 +307,6 @@
       const base = `https://github.com/ewiggin/download.booringsoftware.com/releases/download/${version}`;
       return [
         {
-          name: 'Ubuntu', sub: 'Linux x64 · .AppImage',
-          url: `${base}/Roller.Admin_${semver}_amd64.AppImage`,
-          iconWrap: 'bg-orange-500/10',
-          icon: `<svg class="w-6 h-6 text-orange-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2a8 8 0 1 1 0 16A8 8 0 0 1 12 4zm0 2a6 6 0 1 0 0 12A6 6 0 0 0 12 6zm0 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-4.5 3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm9 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg>`,
-        },
-        {
           name: 'macOS', sub: 'Apple Silicon · .dmg',
           url: `${base}/Roller.Admin_${semver}_aarch64.dmg`,
           iconWrap: 'bg-gray-200 dark:bg-gray-700',
@@ -397,7 +402,7 @@
           </div>
           <div class="px-6 py-6">
             <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">Descargar</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">${platformsHTML}</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">${platformsHTML}</div>
           </div>`;
 
         this.replaceWith(section);

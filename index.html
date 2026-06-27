@@ -69,6 +69,25 @@
   <!-- MAIN CONTENT -->
   <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
 
+    <version-card version="desktop-v0.4.2" date="27 jun 2026">
+      <changelog-section name="Actividades" icon="calendar">
+        <changelog-item type="new">Mapa desplegable en los listados de actividades, turnos de predicación, turnos de comida y carros: en la cabecera de cada listado hay ahora un mapa que puedes abrir o cerrar con un clic, y que muestra en el mapa las ubicaciones que coincidan con los filtros activos en ese momento.</changelog-item>
+        <changelog-item type="new">Mapa con grupos en el detalle de actividad: la pestaña Grupos del detalle de cada actividad muestra ahora un mapa donde puedes ver los grupos ya asignados y los disponibles. Al hacer clic en uno de los grupos disponibles en el mapa, aparece directamente una ficha para asignarlo.</changelog-item>
+        <changelog-item type="new">Tres pestañas en grupos de predicación: dentro de cada grupo de predicación desplegado hay ahora tres pestañas separadas, Voluntarios, Invitados y Carros, en lugar de mostrar todo apilado. La pestaña Invitados incluye un mapa con las ubicaciones de los invitados del grupo.</changelog-item>
+        <changelog-item type="improved">Al importar un turno de comida, la dirección y la ubicación de la congregación correspondiente se asignan automáticamente. Además, si hay algún problema al importar, el mensaje de error se muestra ahora correctamente en la ventana de importación.</changelog-item>
+        <changelog-item type="improved">En los PDFs de horario, los turnos de comida ya no muestran la dirección en la columna Lugar, puesto que ya aparece en la descripción del turno y repetirla generaba confusión.</changelog-item>
+        <changelog-item type="improved">Cuando varios grupos comparten la misma ubicación en el mapa, sus marcadores se separan automáticamente en espiral para que puedas hacer clic en cada uno de forma individual.</changelog-item>
+        <changelog-item type="fixed">Corregido: el número máximo de turnos de predicación por grupo era 4 por defecto cuando el valor correcto es 3.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Voluntarios" icon="user">
+        <changelog-item type="improved">La plantilla Excel de importación de voluntarios incluye ahora las columnas Roles y Activo, que antes no aparecían en la plantilla aunque sí se procesaban al importar. La columna Roles admite varios nombres separados por coma; la columna Activo admite los valores Sí, Si, yes, 1 o true.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Administración general" icon="settings">
+        <changelog-item type="new">Los PDFs de horario de grupo y de voluntario incluyen ahora el logo y una cabecera en cada documento.</changelog-item>
+        <changelog-item type="new">Los superadministradores pueden configurar desde la página de Ajustes el número máximo de actividades y de turnos de predicación que puede tener asignado un grupo. La aplicación respeta ese límite en todos los selectores y mapas.</changelog-item>
+      </changelog-section>
+    </version-card>
+
     <version-card version="desktop-v0.4.1" date="27 jun 2026">
       <changelog-section name="Voluntarios" icon="user">
         <changelog-item type="new">Descarga el horario de un voluntario en PDF: en la lista de voluntarios aparece ahora un botón para generar el PDF con todas sus actividades y turnos de la semana. El botón solo es visible al activar el modo Planificación.</changelog-item>

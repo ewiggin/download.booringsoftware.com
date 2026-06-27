@@ -69,6 +69,19 @@
   <!-- MAIN CONTENT -->
   <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
 
+    <version-card version="desktop-v0.4.1" date="27 jun 2026">
+      <changelog-section name="Voluntarios" icon="user">
+        <changelog-item type="new">Descarga el horario de un voluntario en PDF: en la lista de voluntarios aparece ahora un botón para generar el PDF con todas sus actividades y turnos de la semana. El botón solo es visible al activar el modo Planificación.</changelog-item>
+        <changelog-item type="new">Nuevo filtro por congregación en la lista de voluntarios: un desplegable permite ver solo los voluntarios de una congregación concreta, o elegir "Ninguna" para listar los que aún no tienen congregación asignada. Se actualiza automáticamente al cambiar de región.</changelog-item>
+        <changelog-item type="improved">El calendario semanal de cada voluntario ahora ocupa todo el ancho disponible y muestra columnas de igual tamaño, haciendo más fácil leer la planificación de un vistazo.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Grupos de invitados" icon="users">
+        <changelog-item type="new">Nuevo filtro por congregación en la lista de grupos de invitados: igual que en voluntarios, con opción "Ninguna" para ver los grupos sin congregación asignada.</changelog-item>
+        <changelog-item type="improved">El botón para borrar grupos (solo superadministrador) es ahora un menú con dos opciones: "Borrar todo" elimina todos los grupos e invitados, y "Borrar los del filtro actual" elimina únicamente los grupos visibles con los filtros activos. Ambas opciones piden escribir BORRAR para confirmar.</changelog-item>
+        <changelog-item type="improved">El calendario semanal de grupos de invitados también se muestra ahora a ancho completo y con columnas de igual tamaño.</changelog-item>
+      </changelog-section>
+    </version-card>
+
     <version-card version="desktop-v0.4.0" date="26 jun 2026">
       <changelog-section name="Actividades" icon="calendar">
         <changelog-item type="new">Calendario semanal en grupos de anfitriones: en la lista de grupos de anfitriones puedes desplegar un calendario con todas sus actividades de la semana, organizadas por día y franja horaria. Cada actividad indica si está en borrador o publicada. Puedes expandir y colapsar cada grupo individualmente, o todos a la vez con un solo clic.</changelog-item>

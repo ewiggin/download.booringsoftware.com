@@ -69,6 +69,20 @@
   <!-- MAIN CONTENT -->
   <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
 
+    <version-card version="desktop-v0.5.0" date="29 jun 2026">
+      <changelog-section name="Actividades" icon="calendar">
+        <changelog-item type="new">Asignación automática de grupos de invitados por turno: cada turno de predicación tiene ahora un botón que asigna automáticamente los grupos más adecuados. La aplicación escoge los más cercanos al lugar del turno, respeta el número máximo configurado y descarta los que ya están asignados o tienen conflicto ese mismo día. Al terminar muestra cuántos grupos se han asignado.</changelog-item>
+        <changelog-item type="new">Asignación automática para toda la campaña de una sola vez: un nuevo botón en la cabecera de la lista de turnos permite lanzar la asignación automática en todos los turnos de la campaña sin tener que hacerlo uno a uno.</changelog-item>
+        <changelog-item type="new">Antes de ejecutar la asignación automática, ya sea en un turno o en toda la campaña, la aplicación muestra una ventana con los criterios que se van a aplicar (distancia, límite de grupos y conflictos de horario) y te permite cancelar si lo prefieres.</changelog-item>
+        <changelog-item type="improved">El contador de invitados de cada turno muestra ahora el número total de personas, en lugar del número de grupos, para que puedas ver de un vistazo cuántos invitados tienes realmente asignados.</changelog-item>
+        <changelog-item type="improved">Cuando no se ha configurado un límite de grupos por turno, el contador desaparece automáticamente para no generar confusión.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Administración general" icon="settings">
+        <changelog-item type="new">Nuevo ajuste en la página de Ajustes para definir el número máximo de grupos de invitados que puede recibir cada turno de predicación. En el detalle del turno aparece un contador que muestra los grupos asignados frente al límite configurado.</changelog-item>
+        <changelog-item type="improved">Los botones para borrar todos los grupos de invitados o todos los voluntarios muestran ahora una ventana de confirmación integrada en la aplicación, más clara y coherente con el resto de la interfaz.</changelog-item>
+      </changelog-section>
+    </version-card>
+
     <version-card version="desktop-v0.4.2" date="27 jun 2026">
       <changelog-section name="Actividades" icon="calendar">
         <changelog-item type="new">Mapa desplegable en los listados de actividades, turnos de predicación, turnos de comida y carros: en la cabecera de cada listado hay ahora un mapa que puedes abrir o cerrar con un clic, y que muestra en el mapa las ubicaciones que coincidan con los filtros activos en ese momento.</changelog-item>

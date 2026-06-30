@@ -69,6 +69,21 @@
   <!-- MAIN CONTENT -->
   <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
 
+    <version-card version="desktop-v0.7.0" date="30 jun 2026">
+      <changelog-section name="Grupos de invitados" icon="users">
+        <changelog-item type="new">Los PDFs de horario de grupo muestran ahora el nombre del contacto junto al código del grupo, para que sea más fácil identificar a quién pertenece cada horario de un vistazo.</changelog-item>
+        <changelog-item type="new">Descarga masiva de horarios en un solo archivo: en la lista de grupos de invitados (modo Planificación) hay ahora un botón que empaqueta en un único archivo ZIP los horarios en PDF de todos los grupos que coincidan con los filtros activos, sin tener que descargarlos uno a uno.</changelog-item>
+        <changelog-item type="new">Ventana de planificación independiente: un botón de calendario en la lista de grupos de invitados y en el detalle de cada grupo de predicación abre el calendario de planificación del grupo en una ventana separada de solo lectura, para poder consultarlo mientras se trabaja en otras partes de la aplicación.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Actividades" icon="calendar">
+        <changelog-item type="new">Asignación y desasignación directamente desde el calendario de planificación: en el modo Planificación, cada columna de día incluye un botón "+" que permite asignar a un grupo cualquier actividad general, turno de comida o turno de predicación sin salir del calendario. Las opciones que no están disponibles —por conflicto de horario, mismo nombre u otro motivo— aparecen deshabilitadas con una explicación. Cada actividad ya asignada muestra un botón "×" para quitarla al instante desde el propio calendario.</changelog-item>
+        <changelog-item type="new">Al lanzar la asignación automática de turnos de predicación, turnos de comida o actividades generales —tanto para un solo grupo como de forma masiva—, puedes elegir ahora si la aplicación debe dar prioridad a los grupos más cercanos (opción por defecto) o a los grupos con más personas.</changelog-item>
+        <changelog-item type="new">Al asignar una actividad a un grupo desde el calendario, la lista de opciones muestra ahora información adicional: la congregación del anfitrión, cuántos grupos e invitados hay ya asignados y la distancia en kilómetros al grupo. Los turnos de predicación incluyen además las mismas columnas que aparecen en su listado habitual.</changelog-item>
+        <changelog-item type="improved">La asignación automática ya no intenta asignar actividades que están abiertas a todos los grupos de la congregación o de la región, puesto que esos grupos ya las tienen en su calendario sin necesidad de asignación individual.</changelog-item>
+        <changelog-item type="fixed">Corregido un error por el que los turnos de comida consumían parte del cupo de actividades generales de un grupo, lo que impedía tener a la vez el máximo de actividades generales y uno o más turnos de comida.</changelog-item>
+      </changelog-section>
+    </version-card>
+
     <version-card version="desktop-v0.6.0" date="30 jun 2026">
       <changelog-section name="Actividades generales" icon="calendar">
         <changelog-item type="new">Asignación automática de grupos para actividades generales: cada actividad general tiene ahora un botón que asigna automáticamente los grupos más adecuados por proximidad. La aplicación descarta los grupos que ya tienen un turno de comida ese mismo día, respeta el límite de actividades por grupo y el aforo máximo si está configurado.</changelog-item>

@@ -69,6 +69,20 @@
   <!-- MAIN CONTENT -->
   <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
 
+    <version-card version="desktop-v0.6.0" date="30 jun 2026">
+      <changelog-section name="Actividades generales" icon="calendar">
+        <changelog-item type="new">Asignación automática de grupos para actividades generales: cada actividad general tiene ahora un botón que asigna automáticamente los grupos más adecuados por proximidad. La aplicación descarta los grupos que ya tienen un turno de comida ese mismo día, respeta el límite de actividades por grupo y el aforo máximo si está configurado.</changelog-item>
+        <changelog-item type="new">Asignación automática para todas las actividades generales a la vez: un nuevo botón en la cabecera del listado de actividades generales permite lanzar la asignación automática en todas las actividades sin hacerlo una a una. Antes de empezar muestra una ventana con los criterios que se van a aplicar, y al terminar informa del número de actividades procesadas y de los grupos que no se han podido asignar por haber alcanzado el aforo.</changelog-item>
+        <changelog-item type="new">Invitación abierta a toda la congregación o toda la región: al editar una actividad general puedes marcarla como abierta a todos los grupos de la congregación o a todos los grupos de la región. Cuando alguna de estas opciones está activa, los grupos correspondientes ven la actividad en su calendario PDF sin necesidad de asignarlos uno a uno.</changelog-item>
+        <changelog-item type="new">Los grupos ya no pueden participar en dos actividades generales con el mismo nombre: si un grupo ya está asignado a una actividad general con un nombre determinado, no se le puede asignar a otra actividad que tenga ese mismo nombre. Los grupos en esa situación aparecen deshabilitados en el selector con el motivo indicado.</changelog-item>
+      </changelog-section>
+      <changelog-section name="Administración general" icon="settings">
+        <changelog-item type="new">Opción para desactivar la restricción de nombre duplicado en actividades generales: en la página de Ajustes, dentro del apartado de Límites de campaña, hay ahora una casilla para desactivar globalmente la restricción anterior si las necesidades de tu campaña lo requieren.</changelog-item>
+        <changelog-item type="improved">El número máximo de turnos de comida por grupo ya es configurable: en la página de Ajustes puedes indicar cuántos turnos de comida puede tener asignados como máximo cada grupo de invitados. Antes este límite era fijo; ahora puedes ajustarlo según las necesidades de la campaña.</changelog-item>
+        <changelog-item type="improved">Al importar actividades, los espacios extra al inicio o al final del nombre se eliminan automáticamente. Esto evita que dos actividades con el mismo nombre se traten como actividades distintas por tener espacios invisibles.</changelog-item>
+      </changelog-section>
+    </version-card>
+
     <version-card version="desktop-v0.5.0" date="29 jun 2026">
       <changelog-section name="Actividades" icon="calendar">
         <changelog-item type="new">Asignación automática de grupos de invitados por turno: cada turno de predicación tiene ahora un botón que asigna automáticamente los grupos más adecuados. La aplicación escoge los más cercanos al lugar del turno, respeta el número máximo configurado y descarta los que ya están asignados o tienen conflicto ese mismo día. Al terminar muestra cuántos grupos se han asignado.</changelog-item>

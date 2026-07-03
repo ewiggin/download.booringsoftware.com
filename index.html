@@ -114,6 +114,31 @@
 
     <!-- MAIN CONTENT -->
     <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
+      <version-card version="desktop-v0.7.2" date="3 jul 2026">
+        <changelog-section name="Grupos de invitados" icon="users">
+          <changelog-item type="new"
+            >Puedes guardar el número de teléfono de cada invitado: está
+            disponible al crear o editar la lista, en la ficha del invitado y
+            en el formulario público de registro. También se incluye en la
+            plantilla de importación y en la exportación a Excel.</changelog-item
+          >
+        </changelog-section>
+        <changelog-section name="Actividades" icon="calendar">
+          <changelog-item type="improved"
+            >El PDF de turnos de comida muestra ahora el teléfono del contacto
+            de cada grupo asignado, entre paréntesis junto al número de
+            invitados — por ejemplo "GRP (5 inv. - tel: 600 123 456)" —, siempre
+            que el contacto lo tenga registrado. Los grupos aparecen en líneas
+            separadas para facilitar la lectura.</changelog-item
+          >
+          <changelog-item type="fixed"
+            >Corregido un problema por el que el nombre del anfitrión podía
+            quedar en blanco en algunos turnos de comida con datos importados
+            anteriormente.</changelog-item
+          >
+        </changelog-section>
+      </version-card>
+
       <version-card version="desktop-v0.7.1" date="3 jul 2026">
         <changelog-section name="Actividades" icon="calendar">
           <changelog-item type="new"

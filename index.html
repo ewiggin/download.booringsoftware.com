@@ -114,6 +114,50 @@
 
     <!-- MAIN CONTENT -->
     <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
+      <version-card version="desktop-v0.7.3" date="6 jul 2026">
+        <changelog-section name="Grupos de invitados" icon="users">
+          <changelog-item type="new"
+            >El formulario público de registro de invitados incluye ahora un
+            campo de región, para que cada invitado pueda indicar su región al
+            registrarse.</changelog-item
+          >
+          <changelog-item type="new"
+            >Nuevo filtro «Solo grupos vacíos» en la lista de grupos de
+            invitados: muestra únicamente los grupos que no tienen ningún
+            invitado asignado. Al borrar el filtro actual, este filtro también
+            se aplica para que solo se eliminen los grupos que aparecen en
+            pantalla.</changelog-item
+          >
+          <changelog-item type="improved"
+            >La ventana de confirmación de borrado filtrado muestra ahora el
+            número exacto de grupos que se van a eliminar y un resumen de los
+            filtros que están activos. Si no hay ningún filtro aplicado, aparece
+            un aviso claro de que se eliminarán todos los
+            grupos.</changelog-item
+          >
+        </changelog-section>
+        <changelog-section name="Actividades" icon="calendar">
+          <changelog-item type="improved"
+            >Al exportar actividades, turnos de predicación o turnos de comida,
+            el archivo descargado incluye ahora únicamente el tipo que estás
+            viendo, sin mezclar los tres tipos en un mismo
+            archivo.</changelog-item
+          >
+          <changelog-item type="fixed"
+            >Corregido un error por el que la congregación no se guardaba
+            correctamente al actualizar una actividad mediante la importación de
+            Excel o al editar una serie de actividades.</changelog-item
+          >
+        </changelog-section>
+        <changelog-section name="Administración general" icon="settings">
+          <changelog-item type="fixed"
+            >Las ventanas emergentes ya no se cierran al hacer clic fuera de
+            ellas, evitando que un clic accidental descarte un formulario con
+            cambios sin guardar.</changelog-item
+          >
+        </changelog-section>
+      </version-card>
+
       <version-card version="desktop-v0.7.2" date="3 jul 2026">
         <changelog-section name="Grupos de invitados" icon="users">
           <changelog-item type="new"

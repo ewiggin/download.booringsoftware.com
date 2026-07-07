@@ -114,6 +114,42 @@
 
     <!-- MAIN CONTENT -->
     <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
+      <version-card version="desktop-v0.7.4" date="7 jul 2026">
+        <changelog-section name="Actividades" icon="calendar">
+          <changelog-item type="new"
+            >La ubicación de las actividades ya no se pierde al exportar y
+            volver a importar desde Excel: la plantilla y el archivo exportado
+            incluyen ahora dos columnas nuevas con las coordenadas
+            (location_lat y location_lng), de modo que la dirección y su
+            posición en el mapa se conservan al reimportar. Si el Excel trae
+            una ubicación, esta tiene prioridad sobre la de la congregación en
+            los turnos de comida; si hay dirección pero faltan las coordenadas
+            o no son válidas, se avisa fila por fila y solo se omite la
+            ubicación, sin bloquear el resto de la importación. Los decimales
+            escritos con coma, habituales en Excel en español, se aceptan sin
+            problema.</changelog-item
+          >
+          <changelog-item type="new"
+            >Nuevo campo de dirección libre para lugares que Google Maps no
+            reconoce: al crear o editar una actividad puedes escribir una
+            dirección en texto libre, con el aviso de que no se verifica en el
+            mapa ni se usa para ordenar por distancia. Este campo se incluye
+            también en la plantilla, el export y el import de Excel, y es
+            visible para invitados y capitanes. En los PDFs de horario
+            (individual, por congregación y de voluntario) y en las vistas de
+            planificación del administrador aparece entre paréntesis debajo de
+            la dirección verificada, o sola si no hay ninguna
+            otra.</changelog-item
+          >
+          <changelog-item type="improved"
+            >Borrar la ubicación de una actividad es ahora más directo: la
+            vista previa del mapa con la dirección guardada incluye un botón
+            para eliminarla al instante, sin tener que pasar antes por la
+            opción de cambiarla.</changelog-item
+          >
+        </changelog-section>
+      </version-card>
+
       <version-card version="desktop-v0.7.3" date="6 jul 2026">
         <changelog-section name="Grupos de invitados" icon="users">
           <changelog-item type="new"

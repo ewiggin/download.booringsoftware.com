@@ -114,20 +114,51 @@
 
     <!-- MAIN CONTENT -->
     <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
+      <version-card version="desktop-v0.8.0" date="10 jul 2026">
+        <changelog-section name="Actividades" icon="calendar">
+          <changelog-item type="new">
+            A partir de ahora también se puede asignar automáticamente los
+            voluntarios a las actividades y turnos de predicación. El máximo de
+            voluntarios por turno y grupo se configura en la sección de ajustes,
+            por defecto son 2 por grupo.
+          </changelog-item>
+          <changelog-item type="improved">
+            Se ha mejorado el algoritmo que asigna automáticamente los grupos de
+            invitados. Ahora se puede activar la opción para que deje espacio
+            entre turnos y no sean seguidos (si es posible). <br /><br />
+            En resumen la explicación es la siguiente: <br /><br />
+            El algoritmo hace una primera ronda (con exclusión), es decir, al
+            procesar cada día (D), un grupo que ya tenga un turno de predicación
+            el día D−1 o D+1 queda excluido de los candidatos de ese día. Esto
+            cuenta tanto los turnos preexistentes (asignados manualmente) como
+            los que la propia ejecución va asignando en días anteriores, porque
+            cada asignación se persiste y la elegibilidad se recalcula por día.
+            <br /><br />
+            El efecto práctico: los turnos de cada grupo quedan espaciados (día
+            1, día 3, día 5… en vez de día 1 y día 2). Luego, en una segunda
+            ronda (repesca): al terminar todos los días, se repite la pasada
+            completa sin la restricción de días consecutivos, para rellenar la
+            capacidad que haya quedado libre con grupos que aún no han alcanzado
+            su máximo de turnos (maxPreachingShiftsPerGroup). Así se cumple el
+            "evitar si es posible": nadie se queda sin turnos que podría tener
+            solo por culpa de la restricción.
+          </changelog-item>
+        </changelog-section>
+      </version-card>
+
       <version-card version="desktop-v0.7.4" date="7 jul 2026">
         <changelog-section name="Actividades" icon="calendar">
           <changelog-item type="new"
             >La ubicación de las actividades ya no se pierde al exportar y
             volver a importar desde Excel: la plantilla y el archivo exportado
-            incluyen ahora dos columnas nuevas con las coordenadas
-            (location_lat y location_lng), de modo que la dirección y su
-            posición en el mapa se conservan al reimportar. Si el Excel trae
-            una ubicación, esta tiene prioridad sobre la de la congregación en
-            los turnos de comida; si hay dirección pero faltan las coordenadas
-            o no son válidas, se avisa fila por fila y solo se omite la
-            ubicación, sin bloquear el resto de la importación. Los decimales
-            escritos con coma, habituales en Excel en español, se aceptan sin
-            problema.</changelog-item
+            incluyen ahora dos columnas nuevas con las coordenadas (location_lat
+            y location_lng), de modo que la dirección y su posición en el mapa
+            se conservan al reimportar. Si el Excel trae una ubicación, esta
+            tiene prioridad sobre la de la congregación en los turnos de comida;
+            si hay dirección pero faltan las coordenadas o no son válidas, se
+            avisa fila por fila y solo se omite la ubicación, sin bloquear el
+            resto de la importación. Los decimales escritos con coma, habituales
+            en Excel en español, se aceptan sin problema.</changelog-item
           >
           <changelog-item type="new"
             >Nuevo campo de dirección libre para lugares que Google Maps no
@@ -142,10 +173,10 @@
             otra.</changelog-item
           >
           <changelog-item type="improved"
-            >Borrar la ubicación de una actividad es ahora más directo: la
-            vista previa del mapa con la dirección guardada incluye un botón
-            para eliminarla al instante, sin tener que pasar antes por la
-            opción de cambiarla.</changelog-item
+            >Borrar la ubicación de una actividad es ahora más directo: la vista
+            previa del mapa con la dirección guardada incluye un botón para
+            eliminarla al instante, sin tener que pasar antes por la opción de
+            cambiarla.</changelog-item
           >
         </changelog-section>
       </version-card>

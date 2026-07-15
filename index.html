@@ -114,6 +114,80 @@
 
     <!-- MAIN CONTENT -->
     <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
+      <version-card version="desktop-v0.9.0" date="15 jul 2026">
+        <changelog-section name="Grupos de invitados" icon="users">
+          <changelog-item type="new"
+            >Fusionar dos grupos de invitados en uno: un nuevo botón «Merge» en
+            la cabecera de la ventana de invitados del grupo permite mover todos
+            los invitados a otro grupo de destino; el grupo original se elimina
+            automáticamente al terminar.</changelog-item
+          >
+          <changelog-item type="new"
+            >Nuevos filtros en la lista de grupos con el modo Planificación
+            activo: puedes buscar grupos por su número exacto de actividades
+            asignadas (actividades generales, sin contar turnos de predicación
+            ni de comida) y por su número exacto de turnos de predicación, para
+            localizar rápidamente los grupos con pocas asignaciones. Además,
+            cada fila muestra dos contadores con sus asignaciones
+            actuales.</changelog-item
+          >
+          <changelog-item type="improved"
+            >La disponibilidad que decide si un grupo aparece en los selectores
+            de grupos disponibles es ahora únicamente la del propio grupo: la
+            disponibilidad individual de cada invitado ya no oculta el grupo de
+            esas listas.</changelog-item
+          >
+          <changelog-item type="fixed"
+            >Corregido un error por el que, al migrar un invitado a otro grupo,
+            la página se recargaba sin completar la migración; ahora el proceso
+            funciona correctamente.</changelog-item
+          >
+          <changelog-item type="fixed"
+            >Los grupos recién creados ya aparecen en la ventana de crear
+            invitado: la lista de grupos se actualiza cada vez que seleccionas
+            la región, sin necesidad de recargar la página.</changelog-item
+          >
+        </changelog-section>
+        <changelog-section name="Actividades" icon="calendar">
+          <changelog-item type="improved"
+            >En la ventana de asignación del calendario de Planificación, los
+            grupos de predicación que ya están al límite de invitados siguen
+            siendo seleccionables, de modo que puedes sobrepasar el límite
+            manualmente si lo necesitas. Se muestran con el contador en rojo y
+            un aviso de que se superará el límite. La asignación automática
+            sigue respetando el límite como hasta ahora.</changelog-item
+          >
+        </changelog-section>
+        <changelog-section name="Voluntarios" icon="user">
+          <changelog-item type="new"
+            >Descarga en Excel de los voluntarios de los turnos de predicación:
+            el archivo incluye una fila por voluntario y grupo de predicación,
+            con el código, nombre, rol y teléfono del voluntario, su
+            congregación (la del anfitrión de la actividad), y el código del
+            grupo de invitados asignado junto con su número de invitados y el
+            teléfono del contacto. Disponible desde el detalle de cada turno y
+            desde la lista de turnos.</changelog-item
+          >
+          <changelog-item type="new"
+            >Nuevo mapa de voluntarios por turno de predicación: una vista de
+            mapa muestra dónde está cada voluntario y su distancia a cada grupo
+            de predicación del turno, para facilitar el reparto.</changelog-item
+          >
+          <changelog-item type="fixed"
+            >Corregido un error por el que la descarga en Excel de los
+            voluntarios de predicación salía vacía; ahora los datos aparecen
+            siempre, tanto desde el detalle de un turno como desde la lista
+            filtrada.</changelog-item
+          >
+        </changelog-section>
+        <changelog-section name="Administración general" icon="settings">
+          <changelog-item type="improved"
+            >Todas las ventanas emergentes de la aplicación se pueden cerrar
+            ahora pulsando la tecla Escape.</changelog-item
+          >
+        </changelog-section>
+      </version-card>
+
       <version-card version="desktop-v0.8.0" date="10 jul 2026">
         <changelog-section name="Actividades" icon="calendar">
           <changelog-item type="new">

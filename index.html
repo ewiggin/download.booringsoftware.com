@@ -114,6 +114,42 @@
 
     <!-- MAIN CONTENT -->
     <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
+      <version-card version="desktop-v0.9.2" date="18 jul 2026">
+        <changelog-section name="Actividades" icon="calendar">
+          <changelog-item type="fixed"
+            >Al volver a importar un Excel de actividades, las actividades que
+            ya existían se ofrecían a veces como «No encontrada — se creará»,
+            sobre todo las de fechas más tardías, con el riesgo de crear
+            duplicados. Ahora la importación comprueba cada actividad
+            directamente por su identificador en todas tus regiones, por lo que
+            la vista previa indica correctamente cuáles se crearán y cuáles ya
+            existen.</changelog-item
+          >
+          <changelog-item type="fixed"
+            >Las fechas y horas que la hoja de cálculo convierte a su formato
+            local al editar el archivo exportado (p. ej. «1/15/25» o «9:00 AM»)
+            hacían que esas filas se rechazaran sin avisar. Ahora la importación
+            entiende también esos formatos, además de «DD/MM/AAAA», «H:MM»,
+            «HH:MM:SS» y las horas con AM/PM; y si algún valor no se puede
+            interpretar, la vista previa lo señala en su fila con un mensaje
+            claro.</changelog-item
+          >
+        </changelog-section>
+        <changelog-section name="Administración general" icon="settings">
+          <changelog-item type="improved"
+            >Cuando una importación de Excel falla, todas las pantallas
+            (invitados, voluntarios, grupos, congregaciones, carritos, regiones,
+            actividades y la importación de base de datos en Ajustes) muestran
+            ahora la causa real del error en lugar de un mensaje genérico: por
+            ejemplo, qué columna obligatoria falta en el archivo, que el archivo
+            no es un Excel válido o que no contiene ninguna columna de la
+            plantilla. En la importación de base de datos se distingue además
+            entre un archivo ilegible y un backup con estructura
+            incorrecta.</changelog-item
+          >
+        </changelog-section>
+      </version-card>
+
       <version-card version="desktop-v0.9.0" date="15 jul 2026">
         <changelog-section name="Grupos de invitados" icon="users">
           <changelog-item type="new"
